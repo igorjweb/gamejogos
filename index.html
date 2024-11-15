@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="elemento">
+        <form class="container">
+            <h1 class="login">Login</h1>
+            <section class="input-box">
+                <input type="text" name="ursename" placeholder="ursename">
+                <i class='bx bxs-user'></i>
+            </section>
+
+            <section class="input-box">
+                <input type="password" name="password" placeholder="password">
+                <i class='bx bxs-lock-alt'></i>
+            </section>
+
+            <section class="remember-forgot-box">
+                <div class="remember-me">
+                    <input type="checkbox" name="remember-me" id="remember-me">
+                    <label for="remember-me">
+                        <h5>remember-me</h5>
+                    </label>
+                </div>
+                <div class="text-center">
+                    <p><a href="password.html"><strong>Forgot Password?</strong></a></p>
+                </div>
+            </section>
+            <button class="login-button" type="submit">
+                <a href="game.html">Login</a>
+            </button>
+
+            <h5 class="dont-have-an-account">
+                Don't have an account?
+                <a href="register.html"><b>Register</b></a> <!-- Link para a página de registro -->
+            </h5>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Vídeo de fundo -->
+    <video id="video-fundo" autoplay muted loop>
+        <source src="https://cdn.pixabay.com/video/2023/07/04/169981-842348755_large.mp4" type="video/mp4">
+        Seu navegador não suporta o formato de vídeo.
+    </video>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Botão para alternar entre imagem e vídeo -->
+    <button onclick="alternarFundo()" class="Image">Alterar Fundo</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

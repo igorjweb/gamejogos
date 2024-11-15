@@ -1,0 +1,94 @@
+        /* Corpo da página */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            /* Evitar barras de rolagem */
+        }
+
+        /* Estilo do vídeo de fundo */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            /* Coloca o vídeo atrás do conteúdo */
+        }
+
+        /* Container centralizado */
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Fundo translúcido */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        /* Estilos do formulário */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #007bff;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .text-center {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .text-center a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .text-center a:hover {
+            text-decoration: underline;
+        }
+
+        .register-form {
+    animation: fadeIn 2s ease-out; /* Animação com duração de 2 segundos */
+}
+
+/* Definir a animação "fade-in" */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(50px); /* Inicia um pouco abaixo */
+    }
+    100% {
+        opacity: 1; /* Finaliza totalmente visível */
+        transform: translateY(0); /* Move para a posição original */
+    }
+}
